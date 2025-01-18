@@ -188,6 +188,7 @@ body {
   overflow: hidden;
 }
 .cctv .content .slider .line {
+  color: #0056b3;
   text-transform: uppercase;
   text-align: left;
   padding-block: 0.8rem;
@@ -200,6 +201,7 @@ body {
   padding-left: 2rem;
   font-size: 1, 5em;
   margin-top: 5rem;
+  color: #f5f5f5;
 }
 
 .cctv .content .Registrasi {
@@ -216,6 +218,34 @@ body {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
+@keyframes anim {
+  0% {
+    margin-top: 0;
+  }
+
+  16% {
+    margin-top: -60px;
+  }
+
+  33% {
+    margin-top: -120px;
+  }
+
+  50% {
+    margin-top: -180px;
+  }
+
+  66% {
+    margin-top: -120px;
+  }
+  82% {
+    margin-top: -60px;
+  }
+  100% {
+    margin-top: 0px;
+  }
+}
+
 /* hero end */
 /* konten 1 start */
 .grid-konten1 {
@@ -313,8 +343,7 @@ body {
   font-size: 15px;
   display: flex;
   margin-top: -3.5rem;
-  padding-bottom: 3rem;
-  padding-left: 44%;
+  margin-left: 45%;
 }
 .line-with-text {
   display: flex;
@@ -352,7 +381,7 @@ body {
 
 .pilihan {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(11.5rem, 1fr));
   gap: 1rem;
   margin: 2rem 1rem;
 }
@@ -540,11 +569,19 @@ footer .credit a {
   .grid-konten1 .kontak-konten1 {
     font-size: 0.8rem;
   }
+  .p p {
+    color: black;
+    font-size: 15px;
+    display: flex;
+    margin-top: -4.5rem;
+    margin-left: 42.5%;
+    margin-bottom: 5rem;
+  }
   .more {
     margin-left: 42%;
   }
 }
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 470px) {
   html {
     font-size: 75%;
   }
@@ -601,48 +638,85 @@ footer .credit a {
     font-size: 2rem;
   }
   .cctv {
-    min-height: 65vh;
+    min-height: 55vh;
     background-size: contain;
     box-sizing: border-box;
+  }
+  .cctv .content h1 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  .cctv .slider {
+    font-size: 1.5rem;
+    height: 25px;
+  }
+  .cctv .content p {
+    margin-top: 4rem;
+  }
+  .cctv .content .Registrasi {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
   }
   .cctv .content .slider .line {
     padding-block: 1.3rem;
   }
+  .grid-konten1 {
+    margin-top: -9rem;
+  }
   .grid-konten1 .kontak-konten1 {
     font-size: 0.8rem;
   }
+  .ragam-konten3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+  }
+  .grid-konten3 {
+    font-size: 0.8rem;
+  }
+  .p p {
+    margin-top: -4.5rem;
+    margin-left: 37%;
+  }
+  .line-with-text {
+    display: flex;
+    margin-top: 3rem;
+    align-items: center;
+    text-align: center;
+  }
   .more {
-    margin-left: 42%;
-    background-color: #0056b3;
+    margin-left: 35%;
+    background-color: #050e1b;
+  }
+  @keyframes anim {
+    0% {
+      margin-top: -10px;
+    }
+
+    16% {
+      margin-top: -60px;
+    }
+
+    33% {
+      margin-top: -115px;
+    }
+
+    50% {
+      margin-top: -170px;
+    }
+
+    66% {
+      margin-top: -115px;
+    }
+    82% {
+      margin-top: -60px;
+    }
+    100% {
+      margin-top: -10px;
+    }
   }
 }
 /* responsiv end */
 /* animasi start */
-@keyframes anim {
-  0% {
-    margin-top: 0;
-  }
-
-  16% {
-    margin-top: -60px;
-  }
-
-  33% {
-    margin-top: -120px;
-  }
-
-  50% {
-    margin-top: -180px;
-  }
-
-  66% {
-    margin-top: -120px;
-  }
-  82% {
-    margin-top: -60px;
-  }
-  100% {
-    margin-top: 0px;
-  }
-}
 /* animasi end */
