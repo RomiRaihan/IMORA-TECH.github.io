@@ -413,6 +413,11 @@ body {
 .produck button:hover {
   background-color: #0056b3;
 }
+.pilihan-custom {
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  width: 15rem;
+}
 @keyframes neonBorderAnimation {
   0% {
     border-image-source: linear-gradient(45deg, #ff007a, #00ffff, #ff007a);
