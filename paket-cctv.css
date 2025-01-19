@@ -234,7 +234,11 @@ body {
   overflow: hidden; /* To ensure no content spills outside */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.pilihan-custom {
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  width: 15rem;
+}
 @keyframes neonBorderAnimation {
   0% {
     border-image-source: linear-gradient(45deg, #ff007a, #00ffff, #ff007a);
