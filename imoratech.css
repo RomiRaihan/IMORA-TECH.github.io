@@ -593,7 +593,7 @@ footer .credit a {
     margin-left: 42%;
   }
 }
-@media screen and (max-width: 470px) {
+@media screen and (max-width: 480px) {
   html {
     font-size: 75%;
   }
