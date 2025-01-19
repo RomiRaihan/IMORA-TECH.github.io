@@ -27,7 +27,7 @@
             </button>
             <div class="dropdown-content">
               <a href="about.html">CCTV</a>
-              <a href="about2.html">Smartlock</a>
+              <!-- <a href="about2.html">Smartlock</a> -->
             </div>
           </div>
           <div class="dropdown">
@@ -39,7 +39,7 @@
             </button>
             <div class="dropdown-content">
               <a href="paket-cctv.html">CCTV</a>
-              <a href="paket-smartlock.html">Smartlock</a>
+              <!-- <a href="paket-smartlock.html">Smartlock</a> -->
             </div>
           </div>
           <a href="kontak.html">Kontak</a>
@@ -60,22 +60,27 @@
           referrerpolicy="no-referrer-when-downgrade"
           class="maps"
         ></iframe>
-        <form action="">
+        <form id="contactForm">
           <img class="logo" src="gambar/logo.png" />
           <div class="input-grup">
-            <i class="fa-regular fa-user fa-lg" style="color: #050e1b"></i
-            ><input type="text" placeholder="Nama" />
+            <i class="fa-regular fa-user fa-lg" style="color: #050e1b"></i>
+            <input type="text" id="name" placeholder="Nama" required />
+          </div>
+          <div class="input-grup">
+            <i class="fa-solid fa-phone fa-lg" style="color: #050e1b"></i>
+            <input type="text" id="contact" placeholder="Kontak" required />
           </div>
           <div class="input-grup">
             <i
               class="fa-solid fa-square-envelope fa-lg"
               style="color: #050e1b"
-            ></i
-            ><input type="text" placeholder="E-Mail" />
-          </div>
-          <div class="input-grup">
-            <i class="fa-solid fa-phone fa-lg" style="color: #050e1b"></i
-            ><input type="text" placeholder="Kontak" />
+            ></i>
+            <input
+              type="text"
+              id="message"
+              placeholder="Pesan dan Saran"
+              required
+            />
           </div>
           <button type="submit" class="btn"><p>kirim pesan</p></button>
         </form>

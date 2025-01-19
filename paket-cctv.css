@@ -188,6 +188,36 @@ body {
   padding: 0 11px;
   /* Memberi ruang di kiri dan kanan teks */
 }
+.line-with-text-type {
+  padding-top: 1rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%; /* Lebar garis dan teks */
+}
+
+/* Garis sebelum teks */
+.line-with-text-type::before {
+  content: "";
+  flex-grow: 1; /* Membuat garis mengisi sisa ruang */
+  border-top: 2px solid #333; /* Garis solid */
+  margin-right: 1.5px; /* Jarak antara garis dan teks */
+}
+
+/* Garis setelah teks */
+.line-with-text-type::after {
+  content: "";
+  flex-grow: 1; /* Membuat garis mengisi sisa ruang */
+  border-top: 2px solid #333; /* Garis solid */
+  margin-left: 1.5px; /* Jarak antara garis dan teks */
+}
+.line-text-type {
+  font-size: 20px;
+  font-weight: bold;
+  color: #050e1b; /* Latar belakang untuk memotong garis */
+  padding: 0 11px;
+  /* Memberi ruang di kiri dan kanan teks */
+}
 /* judul end */
 /* konten start */
 .pilihan {
@@ -199,6 +229,7 @@ body {
 .produck {
   border-radius: 1rem;
   text-align: center;
+  background-color: aliceblue;
   border: 2px solid #050e1b;
   overflow: hidden; /* To ensure no content spills outside */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -225,6 +256,7 @@ body {
 }
 .produck img {
   width: 100%;
+  border-bottom: #0056b3 solid 0.2rem;
   object-fit: cover;
 }
 .produck .content {

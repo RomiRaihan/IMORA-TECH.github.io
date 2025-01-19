@@ -36,3 +36,26 @@ document.querySelectorAll(".produk .close-x").forEach((closeBtn) => {
     }
   });
 });
+// Tangkap elemen form
+const form = document.getElementById("contactForm");
+
+// Tambahkan event listener untuk form submit
+form.addEventListener("submit", function (event) {
+  event.preventDefault(); // Mencegah submit default
+
+  // Ambil nilai dari input
+  const name = document.getElementById("name").value;
+  const contact = document.getElementById("contact").value;
+  const message = document.getElementById("message").value;
+
+  // Nomor WhatsApp tujuan (ganti dengan nomor Anda)
+  const whatsappNumber = "6288214333695"; // Format internasional tanpa tanda '+'
+
+  // Buat URL untuk WhatsApp
+  const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
+    `Nama: ${name}\nKontak: ${contact}\nPesan: ${message}`
+  )}`;
+
+  // Arahkan ke URL WhatsApp
+  window.open(whatsappURL, "_blank");
+});
