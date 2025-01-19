@@ -88,7 +88,20 @@ body {
   cursor: pointer;
   transition: background-color 0.3s;
 }
-
+.dropdown-content1 {
+  display: none;
+  position: absolute;
+  background-color: #050e1b;
+  min-width: 140px;
+  z-index: 1;
+  margin-top: -0.5rem;
+}
+.dropbtn1 {
+  margin-left: 0.5rem;
+}
+.dropdown1:hover .dropdown-content1 {
+  display: block;
+}
 /* Hover effect pada button dropdown */
 .dropdown button:hover {
   background-color: #050e1b;
