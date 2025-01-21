@@ -206,10 +206,11 @@ body {
   color: #050e1b;
   margin: 2rem 2rem;
   font-weight: bold;
+  border-bottom: #000 2px solid;
 }
 .card p {
   color: #050e1b;
-  margin: 2rem 2rem;
+  margin: 1rem 2rem;
 }
 .card h3 {
   color: #050e1b;
@@ -218,8 +219,9 @@ body {
 }
 .card li {
   color: #050e1b;
-  margin: 2rem 2rem;
+  margin: 1rem 2rem;
 }
+
 footer {
   background-color: #050e1b;
   text-align: center;
