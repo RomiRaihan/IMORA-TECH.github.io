@@ -43,7 +43,7 @@ const form = document.getElementById("contactForm");
 form.addEventListener("submit", function (event) {
   event.preventDefault(); // Mencegah submit default
 
-  // Ambil nilai dari input
+  // Ambil nilai dari input]
   const name = document.getElementById("name").value;
   const contact = document.getElementById("contact").value;
   const message = document.getElementById("message").value;
