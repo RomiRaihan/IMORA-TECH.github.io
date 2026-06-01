@@ -176,7 +176,7 @@ body {
   align-items: center;
   background-image: url(gambar/wallpaper.jpg);
   background-repeat: no-repeat;
-  /* background-size: contain; */
+  background-size: 150%;
   background-position: center;
   box-sizing: border-box;
 }
