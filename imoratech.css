@@ -263,9 +263,13 @@ body {
 /* konten 1 start */
 .grid-konten1 {
   display: grid;
-  background-color: aliceblue;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(11.5rem, 11.5rem)
+  );
+  justify-content: center;
   gap: 1rem;
+ background-color: aliceblue;
   border-radius: 1.2rem;
   align-items: center;
   padding: 2rem;
